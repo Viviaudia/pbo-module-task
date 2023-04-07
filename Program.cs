@@ -186,11 +186,17 @@ internal class program
         Console.WriteLine(laptop2.vga.merk);
         Console.WriteLine(laptop2.processor.merk);
         Console.WriteLine(laptop2.processor.tipe);
-        Console.WriteLine(" ");
+        
+        
+        laptop2.LaptopDinyalakan();
+        laptop2.LaptopDimatikan();
+        
 
         Predator predator = new Predator();
         predator.vga = new AMD();
         predator.processor = new CoreI7();
+        
+        Console.WriteLine(" ");
 
         Console.WriteLine(predator.vga.merk);
         Console.WriteLine(predator.processor.merk);
